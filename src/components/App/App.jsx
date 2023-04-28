@@ -28,7 +28,7 @@ class App extends Component {
       <Container>  
         <Section title={'Please leave feedback'}>
           <FeedbackOptns
-            options={['good', 'neutral', 'bad']}
+            options={Object.keys(this.state)}
             onFeedback={this.onFeedback}
           />       
         </Section>
